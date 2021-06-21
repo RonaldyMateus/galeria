@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <div class="preload">
+        <div class="quadrado">
+            <div class="quadrado2">    
+            </div>
+        </div>
+        <div class="text">
+            <h1>Carregando...</h1>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="title">
+            <h1>Galeria de Fotos</h1>
+        </div>
+        
+        <div class="container">
+            <div class="container-fotos">
+                <div class="fotos">
+                    <img onclick="trocaModal('Image/1.jpg', 1)" src="Image/1.jpg" alt="">
+                    <img onclick="trocaModal('Image/2.jpg', 2) " src="Image/2.jpg" alt="">
+                    <img onclick="trocaModal('Image/3.jpg', 3)" src="Image/3.jpg" alt="">
+                    <img onclick="trocaModal('Image/4.jpg', 4)" src="Image/4.jpg" alt="">
+                    <img onclick="trocaModal('Image/5.jpg', 5)" src="Image/5.jpg" alt="">
+                    <img onclick="trocaModal('Image/6.jpg', 6)" src="Image/6.jpg" alt="">
+                    <img onclick="trocaModal('Image/7.jpg', 7)" src="Image/7.jpg" alt="">
+                    <img onclick="trocaModal('Image/8.jpg', 8)" src="Image/8.jpg" alt="">
+                </div>
+            </div>
+            <div class="modal modal-close">
+                <div class="modal-img">
+                    <img class="image-modal" id="img-modal"src="" alt="">
+                </div>
+                <span id="span" onclick="fecharModal()">X</span>
+                <div class="arrow" id="proximo" onclick="prox()" >
+                    <div  class="arrow-text">
+                        >
+                    </div>
+                </div>
+                <div class="arrow prev" id="anterior" onclick="prev()" >
+                    <div  class="arrow-text">
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fonte">Imagens da internet.</div>
+    </div>
+    
+</body>
+<script src="JavaScript/main.js"></script>
+<script src="JavaScript/preload.js"></script>
+</html>
